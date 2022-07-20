@@ -3,46 +3,126 @@ package Calc;
 import javax.swing.JOptionPane;
 
 public class CalcInterface {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
+	CalcControle CCnt = new CalcControle();
+	
+	public void ColocNu() {
 		
-		//chamada
-		CalcControle calcc = new CalcControle();
-		Calcdados calcd = new Calcdados();
-		CalcInterface calcI = new CalcInterface();
+		int opn1, opn2;
 		
-		double
+		String tipo, casos;
 		
-		//estrutura de repetição
-		int c = 9, casos = 0;
+		boolean c = true;
+		
 		
 		do {
 			
-			casos = Integer.parseInt(JOptionPane.showInputDialog("[1] para fazer os calculos\n[9] para sair"));
+			casos = JOptionPane.showInputDialog("Digite '+' para somar\nDigite '-' para subtrair\nDigite 'x' para Multiplicar\nDigite '/' para Dividir\n Digite 's' para sair\n"); 
+			
+			if(casos.equals("s")) {
+				
+				c = false;
+				
+			}
 			
 			switch(casos) {
 			
+			case "+":{
+				
+				tipo = casos;
+				
+				opn1 = Integer.parseInt(JOptionPane.showInputDialog("Coloque o primeiro numero ou 's' para sair"));
+				opn2 = Integer.parseInt(JOptionPane.showInputDialog("Coloque o segundo numero ou 's' para sair"));
+				
+				if(tipo.equals("s")) {
+					
+					c = false;
+					
+				}
+					
+					CCnt.setOpn1(opn1);
+					CCnt.setOpn2(opn2);
+					CCnt.setTips(tipo);
+					
+					CCnt.getCalc();
+					
+				break;
+			}
 			
-			case 1:{
+			case "-":{
 				
+				tipo = casos;
 				
+				opn1 = Integer.parseInt(JOptionPane.showInputDialog("Coloque o primeiro numero ou 's' para sair"));
+				opn2 = Integer.parseInt(JOptionPane.showInputDialog("Coloque o segundo numero ou 's' para sair"));
+				
+				if(tipo.equals("s")) {
+					
+					c = false;
+					
+				}
+					
+					CCnt.setOpn1(opn1);
+					CCnt.setOpn2(opn2);
+					CCnt.setTips(tipo);
+					
+					CCnt.getCalc();
 				
 				break;
 			}
 			
-			default:{
+			case "x":{
 				
-				c = 0;
+				tipo = casos;
+				
+				opn1 = Integer.parseInt(JOptionPane.showInputDialog("Coloque o primeiro numero ou 's' para sair"));
+				opn2 = Integer.parseInt(JOptionPane.showInputDialog("Coloque o segundo numero ou 's' para sair"));
+				
+				if(tipo.equals("s")) {
+					
+					c = false;
+					
+				}
+					
+					CCnt.setOpn1(opn1);
+					CCnt.setOpn2(opn2);
+					CCnt.setTips(tipo);
+					
+					CCnt.getCalc();
 				
 				break;
 			}
 			
+			case "/":{
+				
+				tipo = casos;
+				
+				opn1 = Integer.parseInt(JOptionPane.showInputDialog("Coloque o primeiro numero ou 's' para sair"));
+				opn2 = Integer.parseInt(JOptionPane.showInputDialog("Coloque o segundo numero ou 's' para sair"));
+				
+				
+				if(tipo.equals("s")) {
+					
+					c = false;
+					
+				}else {
+					
+					CCnt.setOpn1(opn1);
+					CCnt.setOpn2(opn2);
+					CCnt.setTips(tipo);
+					
+					CCnt.getCalc();
+					
+				}		
+				break;
+			}
+			
+			
 			
 			}
-		}while(c >= 9);
-		
+			
+		}while(c == true);
 		
 	}
-
+	
 }
