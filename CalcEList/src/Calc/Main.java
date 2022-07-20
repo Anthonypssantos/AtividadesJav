@@ -18,7 +18,7 @@ public class Main {
 		
 		do {
 			
-			casos = JOptionPane.showInputDialog("Digite 1 para iniciar a calculadora\nDigite 2 para ver o resultado e tipo de 'Calculo' escolhido \nDigite 's' para sair");
+			casos = JOptionPane.showInputDialog("Digite 1 para iniciar a calculadora\nDigite 's' para sair");
 			
 			switch(casos) {
 			
@@ -26,13 +26,6 @@ public class Main {
 						
 					Cinf.ColocNu();
 		
-				break;
-			}
-			
-			case "2":{
-				
-				CDad.dados();
-				
 				break;
 			}
 			
