@@ -57,13 +57,6 @@ public class Funcionario {
 		//final de gets e sets das variaveis privadas
 		//================================
 		
-		
-		//chamadas das funções
-		public void imposto() {
-			
-			
-			
-		}
 				
 		//calc ganho liquido mensal
 		public void cglm() {

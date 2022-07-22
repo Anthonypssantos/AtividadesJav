@@ -25,11 +25,11 @@ public class Main {
 			
 			case "addfuncionario":{
 				
-				//nome = JOptionPane.showInputDialog("Coloque seu nome");
+				nome = JOptionPane.showInputDialog("Coloque seu nome");
 				salario = Double.parseDouble(JOptionPane.showInputDialog("Coloque seu salario"));
-				//cpf = JOptionPane.showInputDialog("Coloque seu nome");
-				adm = JOptionPane.showInputDialog("Data de admissão");
-				matricula = JOptionPane.showInputDialog("Matricula");
+				cpf = JOptionPane.showInputDialog("Coloque seu cpf");
+				adm = JOptionPane.showInputDialog("Coloque sua data de admissão");
+				matricula = JOptionPane.showInputDialog("Coloque sua Matricula");
 				
 				if(salario <= 2500.0) {
 					
@@ -48,11 +48,11 @@ public class Main {
 					
 				}
 				
-				//Finc.setNome(nome);
-				//Finc.setCpf(cpf);
-				//Finc.setMatricula(matricula);
+				Finc.setNome(nome);
+				Finc.setCpf(cpf);
+				Finc.setMatricula(matricula);
 				Finc.setSalario(salario);
-				//Finc.setAddms(adm);
+				Finc.setAddms(adm);
 				
 				break;
 				}
