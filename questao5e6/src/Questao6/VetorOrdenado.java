@@ -1,69 +1,84 @@
 package Questao6;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
-public class VetorOrdenado {
+public class VetorOrdenado extends VetorCorrente{
 	
-	
-	ArrayList<String> vet = new ArrayList();
+	VetorCorrente vtct = new VetorCorrente();
+	ArrayList<String> nome = new ArrayList();
 	String h="";
 	
 	public void contructor() {
 		
-		for(int i=0; i <= 5; i++) {
+		for(int i=0; i <= 1; i++) {
 			
 			h = JOptionPane.showInputDialog("Coloque uma String");
 			
-			vet.add(h);	
-			
+			nome.add(h);	
+				
 		}
 		
+		Collections.sort(nome);
 		insert();
 		
 	}
 	
 	public void insert() {
-		
-		for(int i=0; i <= 5; i++) {
+	
+		for(int i=0; i <= 1; i++) {
 			
 			h = JOptionPane.showInputDialog("Coloque '+' 5 Strings");
-			
-			vet.add(h);	
-			
+
+			nome.add(h);	
+				
 		}
 		
+		Collections.sort(nome);
 		get();
 		
 	}
 	
 	public void get() {
-		String l = "";
 			
-			l = JOptionPane.showInputDialog("Teste");
-			
-			for(int i=0;i<10;i++) {
+			for(int i=0;i<4;i++) {
 								
-					System.out.println("Nome buscado: "+3+"\n=======");
+					System.out.println(nome.get(i));
 						
 			}
 		
-	size();
+			merge();
+	}
+	
+	public void merge() {
+	
+		for(int i = 0; i < 4; i++) {
+			
+			vtct.setVet2(nome);
+					
+		}
+		
+		for(int i = 0; i < 1; i++) {
+			
+			System.out.println(vtct.getVet2());
+			
+		}
+		
+			
 	}
 	
 	public void size() {
 		
-		for(int i=0; i <= 10; i++) {
+		for(int i=0; i <= 15; i++) {
 			
-			System.out.println(vet.get(i));	
+			System.out.println(nome.get(i));
 			
 		}
-		
-		
+			
 	}
-	
-	
-	
-	
+		
 }

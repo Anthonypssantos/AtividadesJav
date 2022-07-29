@@ -20,7 +20,7 @@ public class Main {
 			
 			case 1:{
 				
-				vet.contructor();
+				vtod.contructor();
 				
 				break;
 			}
@@ -37,7 +37,6 @@ public class Main {
 			
 			
 		}while(c == true);
-		
 		
 	}
 
