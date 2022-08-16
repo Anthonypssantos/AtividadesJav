@@ -64,7 +64,6 @@ public class Prova {
 		notas.add(nota);
 		nota = 0.0;			
 		h = 0;
-		
 		}
 		
 	
@@ -74,7 +73,7 @@ public class Prova {
 	public void acertos(int i) {
 		
 		JOptionPane.showMessageDialog(null, "acertos no total da turma: "+i);
-		
+		i = 0;
 		nota();
 	}
 	

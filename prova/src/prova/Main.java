@@ -37,7 +37,12 @@ public class Main {
 			recebeenvia	= aleatorio.nextInt(15);
 				
 			}
-				n++;		
+				n++;	
+				if(n == 5) {
+					
+					n = 0;
+					
+				}
 			acertos = p.prov(recebeenvia, n, f);
 				
 				break;

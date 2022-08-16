@@ -2,13 +2,17 @@ package Atividade4;
 
 import javax.swing.JOptionPane;
 
+<<<<<<< HEAD
 import Atividade5.cplanoc;
 
+=======
+>>>>>>> 1028382ee4ed0dd5800557e58b6ed05fbaba7836
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+<<<<<<< HEAD
 		
 		int casos=0;
 		
@@ -46,13 +50,40 @@ public class Main {
 				break;
 				}
 			
+=======
+		representaax r = new representaax();
+		
+		boolean v = true;
+		
+		int casos=0;
+		String nome=" ";
+		
+		do {	
+			
+			casos = Integer.parseInt(JOptionPane.showInputDialog("1 para ver a dimensão de um pais setado"));
+			
+			switch(casos){
+				
+			case 1:{
+				
+			nome = JOptionPane.showInputDialog("Escolha 1 dos paises\nBrasil\nChina\nBragantins\nFaleza\nFaleza\nBaiania\nCloro\nValuzes\nLampada\nThortinha");
+			
+			r.construtor(nome);
+				
+			break;
+			}
+				
+>>>>>>> 1028382ee4ed0dd5800557e58b6ed05fbaba7836
 			}
 			
 		}while(v == true);
 		
+<<<<<<< HEAD
 		
 		
 		
+=======
+>>>>>>> 1028382ee4ed0dd5800557e58b6ed05fbaba7836
 	}
 
 }
