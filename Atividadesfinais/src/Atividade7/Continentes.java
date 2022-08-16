@@ -13,16 +13,14 @@ public class Continentes {
 	 retornar o menor pais
 	 retornar o pais com mais dencidade  
 	 
-	 
 	 String populacao=" ";
 		
-		
-	 
 	 */
-	
+	//1
 	public void Continent(String name) {
 		popul(name);
 	}
+	//2
 	public void popul(String name) {
 		
 		String populacao="";
@@ -31,15 +29,17 @@ public class Continentes {
 			
 			populacao = "7.000.000";
 			JOptionPane.showMessageDialog(null, "Abitantes: "+populacao);		
+			dimensao(name);
 		}else if(name == "Australia") {
 			
 			populacao = "2.000.000";
 			JOptionPane.showMessageDialog(null, "Abitantes: "+populacao);
+			dimensao(name);
 		}else if(name =="América") {
 			
 			populacao = "14.000.000";
 			JOptionPane.showMessageDialog(null, "Abitantes: "+populacao);
-			
+			dimensao(name);
 		}else {
 			
 			populacao = "Continente inxesistente";
@@ -56,20 +56,24 @@ public class Continentes {
 			
 			dim = "km² 123.321.000";
 			JOptionPane.showMessageDialog(null, "Dimensão: "+dim);		
+			maiorp(name);
 		}else if(name == "Australia") {
 			
 			dim = "km² 400.200.000";
 			JOptionPane.showMessageDialog(null, "Dimensão: "+dim);
+			maiorp(name);
 		}else if(name == "América") {
 			
 			dim = "km² 600.100.000";
 			JOptionPane.showMessageDialog(null, "Dimensão: "+dim);
+			maiorp(name);
 		}else {
 			
 			dim = "Continente inxesistente";
 			JOptionPane.showMessageDialog(null, dim);
+			
 		}
-		maiorp(name);
+		
 	}
 	
 	public void maiorp(String name) {
@@ -77,36 +81,35 @@ public class Continentes {
 		if(name == "Europa") {
 			
 			JOptionPane.showMessageDialog(null, "Congo");
-		
+			menorp(name);
 		}else if(name == "Australia") {
 			
 			JOptionPane.showMessageDialog(null, "Manguiço");
-			
+			menorp(name);
 		}else if(name =="América") {
 			
 			JOptionPane.showMessageDialog(null, "Canada");
-			
+			menorp(name);
 		}
 		
-		menorp(name);
+		
 	}
 	public void menorp(String name) {	
 		
 		if(name == "Europa") {
 			
 			JOptionPane.showMessageDialog(null, "Volante");
-		
+			maiordens(name);
 		}else if(name == "Australia") {
 			
 			JOptionPane.showMessageDialog(null, "Coból");
-			
+			maiordens(name);
 		}else if(name =="América") {
 			
 			JOptionPane.showMessageDialog(null, "Veloz");
-			
+			maiordens(name);
 		}
 
-		maiordens(name);
 	}
 	public void maiordens(String name) {
 		
@@ -125,4 +128,5 @@ public class Continentes {
 		}
 	
 	}
+
 }
