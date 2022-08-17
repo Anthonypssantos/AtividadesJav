@@ -11,6 +11,7 @@ public class Matrizmatematica {
 	 */
 	
 	int martriz[][] = {{1,1},{0,0}};
+	int matriznula[][] = {{0,0},{0,0}};
 	
 	public void transposta() {
 		
@@ -27,7 +28,7 @@ public class Matrizmatematica {
 		}
 			
 	}
-	//
+
 	
 	
 	
