@@ -4,7 +4,6 @@ import javax.swing.JOptionPane;
 
 public class cplanoc {
 	
-	
 	int raio=0, ponto=0;
 	
 	public void addplanocartesiano(int a, int b) {
@@ -14,7 +13,6 @@ public class cplanoc {
 		
 	}
 	public int retornaraio() {
-
 		return raio;
 	}
 	public String desinflar(int a, int b, String valida) {
