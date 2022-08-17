@@ -10,7 +10,26 @@ public class Matrizmatematica {
 	 
 	 */
 	
-	int martriz[][] = new int[3][3];
+	int martriz[][] = {{1,1},{0,0}};
 	
-
+	public void transposta() {
+		
+		for(int l = 0; l < 2; l++) {
+			
+			martriz[l][0] = 0;
+			
+			for(int c = 0; c < 2; c++) {
+				
+				martriz[0][c] = 1;
+				
+			}
+			
+		}
+			
+	}
+	//
+	
+	
+	
+	
 }
