@@ -12,6 +12,7 @@ public class Matrizmatematica {
 	
 	int martriz[][] = {{1,1},{0,0}};
 	int matriznula[][] = {{0,0},{0,0}};
+	int matrizdiagonal[][] = {{0,1},{0,1}};
 	
 	public void transposta() {
 		
@@ -25,12 +26,55 @@ public class Matrizmatematica {
 				
 			}
 			
-		}
-			
+			}
+			matpa();
 	}
-
+	//matriz angular
+	public void matpa(){
+		
+		for(int i = 0; i < 1; i++) {
+			
+			for(int a = 0; i < 1; i++) {
+				
+				System.out.println(matrizdiagonal[i][a]);
+				
+			}
+			
+			
+		}
+		
+		matnula();
+	}
 	
+	public void matnula() {
+		
+		for(int i = 0; i < 1; i++) {
+			
+			for(int a = 0; i < 1; i++) {
+				
+				System.out.println(matriznula[i][a]);
+				
+			}
+			
+			
+		}
+		
+		matdiag();
+	}
 	
-	
+	public void matdiag() {
+		
+		for(int i = 0; i < 1; i++) {
+			
+			for(int a = 0; i < 1; i++) {
+				
+				System.out.println(matrizdiagonal[i][a]);
+				
+			}
+			
+			
+		}
+		
+	}
 	
 }
