@@ -1,15 +1,15 @@
 package Atividade5;
 
-<<<<<<< HEAD
+
 import javax.swing.JOptionPane;
 
-=======
->>>>>>> 1028382ee4ed0dd5800557e58b6ed05fbaba7836
+
+
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-<<<<<<< HEAD
+
 			
 		cplanoc cpc = new cplanoc();
 		
@@ -67,9 +67,5 @@ public class Main {
 	}
 
 }
-=======
 
-	}
 
-}
->>>>>>> 1028382ee4ed0dd5800557e58b6ed05fbaba7836
